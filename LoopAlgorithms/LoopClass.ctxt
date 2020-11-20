@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=LoopClass
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ LoopClass\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=sumSeries\ topInt\ divInt\ digits
+comment1.target=void\ mainMethod(int,\ int,\ int,\ int)
+comment2.params=a
+comment2.target=int\ sum(int)
+comment3.params=top\ div
+comment3.target=int\ divFreq(int,\ int)
+comment4.params=a
+comment4.target=void\ digits(int)
+numComments=5

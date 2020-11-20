@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=guess
+comment1.params=
+comment1.target=void\ mainMethod()
+comment2.params=text
+comment2.target=int\ get_int(java.lang.String)
+numComments=3
