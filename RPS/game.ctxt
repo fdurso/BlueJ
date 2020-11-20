@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=game
+comment1.params=
+comment1.target=void\ mainMethod()
+comment2.params=
+comment2.target=void\ format()
+comment3.params=
+comment3.target=char\ input()
+comment4.params=
+comment4.target=char\ cpu_input()
+numComments=5
