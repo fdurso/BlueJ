@@ -22,5 +22,8 @@ public class Point {
    public void printTranslate(){
        System.out.println(x + " " + y);
    }
+   public String toString(){
+       return (this.x + "," + this.y);
+   }
 }
 

@@ -18,5 +18,8 @@ public class Main
         c1.tripleTheRadius();
         
         System.out.println(c1.isInCircle(2,2));
+        
+        Point p = new Point(10,7);
+        System.out.println("p is " + p);
     }
 }
