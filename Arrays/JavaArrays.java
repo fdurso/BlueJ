@@ -77,7 +77,7 @@ public class JavaArrays
         return max;
     }
     
-    public int indexOfSmallerst(int[] numbers)
+    public int indexOfSmallest(int[] numbers)
     {
         int min = Integer.MAX_VALUE;
         int minIndex = 0;
