@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Payroll
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Payroll\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=double\ computeBonusThreshold()
+comment2.params=fixedWage\ perItemWage
+comment2.target=void\ computeWages(double,\ double)
+numComments=3

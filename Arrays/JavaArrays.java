@@ -92,4 +92,15 @@ public class JavaArrays
         return minIndex;
     }
         
+    public static int[] reverseArray(int[] nums)
+    {
+        int[] temp = nums;
+        int i = nums.length - 1;
+        for (int j : temp)
+        {
+            nums[i] = j;
+            i--;
+        }
+        return nums;
+    }
 }
