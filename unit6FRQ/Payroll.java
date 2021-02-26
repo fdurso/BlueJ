@@ -10,6 +10,21 @@ public class Payroll
    private int[] itemsSold; // number of items sold by each employee
    private double[] wages; // wages to be computed in part (b)
    
+   public Payroll(int[] itemsSold)
+   {
+       this.itemsSold = itemsSold;
+       wages = new double[10];
+   }
+   
+   public static void main()
+   {
+       int itemsSold[] = {69, 420, 21, 666, 73, 84, 93, 102, 111, 120};
+       Payroll myPayroll = new Payroll(itemsSold);
+       myPayroll.computeWages(10, 1.5);
+       myPayroll.printWages();
+   }
+       
+   
    public double computeBonusThreshold()
    {
        int largest = Integer.MIN_VALUE;
@@ -43,6 +58,14 @@ public class Payroll
            {
                wages[i] *= 1.1;
            }
+       }
+   }
+   
+   public void printWages()
+   {
+       for (double wage : wages)
+       {
+           System.out.printf("%.2f\n", wage);
        }
    }
 }

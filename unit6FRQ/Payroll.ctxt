@@ -1,8 +1,14 @@
 #BlueJ class context
 comment0.target=Payroll
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Payroll\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
-comment1.target=double\ computeBonusThreshold()
-comment2.params=fixedWage\ perItemWage
-comment2.target=void\ computeWages(double,\ double)
-numComments=3
+comment1.params=itemsSold
+comment1.target=Payroll(int[])
+comment2.params=
+comment2.target=void\ main()
+comment3.params=
+comment3.target=double\ computeBonusThreshold()
+comment4.params=fixedWage\ perItemWage
+comment4.target=void\ computeWages(double,\ double)
+comment5.params=
+comment5.target=void\ printWages()
+numComments=6
