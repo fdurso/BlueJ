@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=BinarySearchPractice
+comment1.params=
+comment1.target=BinarySearchPractice()
+comment2.params=
+comment2.target=void\ main()
+comment3.params=target
+comment3.target=int\ binarySearchArray(java.lang.String)
+numComments=4
