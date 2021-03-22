@@ -31,4 +31,139 @@ public class ComputingStatistics {
       }
       return amount;
    }
+   
+   public double avgLoan()
+   {
+       double sum = 0;
+       for(Loan loan : data)
+       {
+           sum += loan.getLoanAmount();
+       }
+       return sum / data.size();
+   }
+   
+   public double largestLoan()
+   {
+       double max = Double.MIN_VALUE;
+       for(Loan loan : data)
+       {
+           if (loan.getLoanAmount() > max)
+           {
+               max = loan.getLoanAmount();
+           }
+       }
+       return max;
+   }
+   
+   public double smallestLoan()
+   {
+       double min = Double.MAX_VALUE;
+       for(Loan loan : data)
+       {
+           if (loan.getLoanAmount() < min)
+               min = loan.getLoanAmount();
+       }
+       return min;
+   }
+   
+   public String largestLoanCountry()
+   {
+       int maxIndex = 0;
+       for(int i = 0; i < data.size(); i++)
+       {
+           if (data.get(i).getLoanAmount() > data.get(maxIndex).getLoanAmount())
+           {
+               maxIndex = i;
+           }
+       }
+       return data.get(maxIndex).getCountry();
+   }
+   
+   public String smallestLoanCountry()
+   {
+       int minIndex = 0;
+       for(int i = 0; i < data.size(); i++)
+       {
+           if (data.get(i).getLoanAmount() < data.get(minIndex).getLoanAmount())
+           {
+               minIndex = i;
+           }
+       }
+       return data.get(minIndex).getCountry();
+   }
+   
+   public double avgDaysToFund()
+   {
+       double sum = 0;
+       for(Loan loan : data)
+       {
+           sum += loan.getDaysToFund();
+       }
+       return sum / data.size();
+   }
+   
+   public double largestLoanKenya()
+   {
+       double max = Double.MIN_VALUE;
+       for(Loan loan : data)
+       {
+           if ((loan.getCountry().equals("Kenya")) && (loan.getLoanAmount() > max))
+           {
+               max = loan.getLoanAmount();
+           }
+       }
+       return max;
+   }
+   
+   public double avgLoanPhilippines()
+   {
+       double sum = 0;
+       int loans = 0;
+       for(Loan loan : data)
+       {
+           if (loan.getCountry().equals("Philippines"))
+           {
+               sum += loan.getLoanAmount();
+               loans++;
+           }
+       }
+       return sum / loans;
+   }
+   
+   public String longestToFundCountry()
+   {
+       int maxIndex = 0;
+       for(int i = 0; i < data.size(); i++)
+       {
+           if (data.get(i).getDaysToFund() > data.get(maxIndex).getDaysToFund())
+           {
+               maxIndex = i;
+           }
+       }
+       return data.get(maxIndex).getCountry();
+   }
+   
+   public String mostLoansFunded()
+   {
+       int kenyaLoans = 0;
+       int elSalvadorLoans = 0;
+       for(Loan loan : data)
+       {
+           if (loan.getCountry().equals("Kenya"))
+           {
+               kenyaLoans++;
+           } else if (loan.getCountry().equals("El Salvador"))
+           {
+               elSalvadorLoans++;
+           }
+       }
+       
+       if (kenyaLoans > elSalvadorLoans)
+           {
+               return "Kenya";
+           } else
+           {
+               return "El Salvador";
+           }
+   }
 }
