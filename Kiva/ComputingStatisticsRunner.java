@@ -28,9 +28,9 @@ public class ComputingStatisticsRunner {
       System.out.println(analysis.avgLoanPhilippines());
       System.out.println(analysis.longestToFundCountry());
       System.out.println(analysis.mostLoansFunded());
-//       System.out.println(analysis.variance());
-//       System.out.println(analysis.standardDeviation());
-//       System.out.println(analysis.empiricalRule());
+      System.out.println(analysis.variance());
+      System.out.println(analysis.standardDeviation());
+      System.out.println(analysis.empiricalRule());
    }
    
    

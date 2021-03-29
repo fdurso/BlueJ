@@ -159,11 +159,48 @@ public class ComputingStatistics {
        }
        
        if (kenyaLoans > elSalvadorLoans)
-           {
-               return "Kenya";
-           } else
-           {
-               return "El Salvador";
-           }
+       {
+           return "Kenya";
+       } else
+       {
+           return "El Salvador";
+       }
+   }
+   
+   public double variance()
+   {
+       double sigma = 0;
+       double avg = avgLoan();
+       
+       for(Loan loan : data)
+       {
+           sigma += Math.pow((avg - loan.getLoanAmount()), 2);
+       }
+       
+       return sigma / data.size();
+   }
+   
+   public double standardDeviation()
+   {
+       return Math.pow(variance(), 0.5);
+   }
+   
+   public boolean empiricalRule()
+   {
+       int sum = 0;
+       
+       double min = avgLoan() - standardDeviation();
+       double max = avgLoan() + standardDeviation();
+       
+       for(Loan loan : data)
+       {
+           if((loan.getLoanAmount() >= min) && (loan.getLoanAmount() <= max))
+            sum++;
+       }
+       
+       if(((double)sum / data.size() * 100) >= 68)
+        return true;
+       
+       return false;
    }
 }
