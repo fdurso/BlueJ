@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=GradStudent
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ GradStudent\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=name\ dissertationTopic\ ID\ gpa
+comment1.target=GradStudent(java.lang.String,\ java.lang.String,\ int,\ double)
+comment2.params=
+comment2.target=java.lang.String\ getTopic()
+comment3.params=dissertationTopic
+comment3.target=void\ setTopic(java.lang.String)
+comment4.params=
+comment4.target=boolean\ isGraduating()
+comment5.params=
+comment5.target=void\ printWelcome()
+numComments=6
