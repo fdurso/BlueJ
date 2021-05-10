@@ -38,7 +38,7 @@ public class Person
     
     public String toString()
     {
-        return this.name + "\n" + this.phone;
+        return this.name + "\n" + this.phone + "\n";
     }
     
     public boolean equals(Person p1)
@@ -48,7 +48,7 @@ public class Person
         return false;
     }
     
-    public boolean allowAdmit(int clearanceLvl)
+    public boolean allowAdmit(int secretLvl)
     {
         //all people will not havle clearance unless overridden by status as employee
         return false;

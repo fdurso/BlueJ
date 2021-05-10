@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Employee
+comment1.params=
+comment1.target=Employee()
+comment10.params=
+comment10.target=void\ work()
+comment11.params=
+comment11.target=void\ coffee()
+comment2.params=name\ phone\ clearanceLvl\ ID
+comment2.target=Employee(java.lang.String,\ java.lang.String,\ int,\ int)
+comment3.params=
+comment3.target=int\ getID()
+comment4.params=
+comment4.target=int\ getclearanceLvl()
+comment5.params=ID
+comment5.target=void\ setID(int)
+comment6.params=clearanceLvl
+comment6.target=void\ setclearanceLvl(int)
+comment7.params=secretLvl
+comment7.target=boolean\ allowAdmit(int)
+comment8.params=
+comment8.target=java.lang.String\ toString()
+comment9.params=p1
+comment9.target=boolean\ equals(Employee)
+numComments=12
